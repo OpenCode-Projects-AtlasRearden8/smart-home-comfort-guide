@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="&quot;Local control&quot; is the quiet backbone of this manual. Here it is in one sentence: a local device does its job inside your house, on your network, without needin">
+<title>Local Control First — Smart Home Comfort Guide</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="site-title" href="index.html">Smart Home <span>Comfort Guide</span></a>
+<span class="site-tagline">privacy-first, in plain English</span>
+</div></header>
+<main class="wrap">
+<article>
+<nav class="toc"><strong>On this page</strong><ul><li><a href="#why-local-is-the-privacy-friendly-default">Why &quot;local&quot; is the privacy-friendly default</a></li><li><a href="#the-nickname-cloud-tethered">The nickname: &quot;cloud-tethered&quot;</a></li><li><a href="#how-to-spot-local-capable-devices-no-engineering-degree-required">How to spot local-capable devices (no engineering degree required)</a></li><li><a href="#the-three-common-local-first-setups-ranked-by-effort">The three common local-first setups (ranked by effort)</a></li><li><a href="#a-few-genuinely-local-friendly-picks-named-because-theyre-famous-not-because-anyone-paid">A few genuinely local-friendly picks (named because they&#x27;re famous, not because anyone paid)</a></li><li><a href="#what-local-control-does-not-mean">What local control does not mean</a></li></ul></nav><p>"Local control" is the quiet backbone of this manual. Here it is in one sentence: <strong>a local device does its job inside your house, on your network, without needing a company's distant servers to think for it.</strong> This chapter explains why that idea is worth caring about, what it gets you, and how to find it without becoming an engineer.</p>
+<h2 id="why-local-is-the-privacy-friendly-default">Why "local" is the privacy-friendly default</h2>
+<p>Every byte a device sends to a company's servers is a byte about your life that lives on somebody else's disk — subject to their retention policy, their breach history, and their future acquisitions. A device that works locally mostly can't leak what it never sends. Local control also has honest, non-privacy benefits:</p>
+<ul><li><strong>It works when the internet is out.</strong> The schedule lives on the plug, not a server in another state.</li><li><strong>It's faster.</strong> A "turn off the lamp" that doesn't detour to the cloud responds in a fraction of the time.</li><li><strong>It outlives the company.</strong> Cloud-only gadgets become paperweights when the maker loses interest. Local devices keep working.</li></ul>
+<h2 id="the-nickname-cloud-tethered">The nickname: "cloud-tethered"</h2>
+<p>Most beginner-oriented devices are cloud-tethered: they work through an app that goes out to the internet, reaches the maker's servers, and comes back. It's the easiest path (that's why makers choose it), and it's fine for many people. The point of this chapter is not to shame cloud devices — it's to show that a <strong>local-first subset</strong> exists and is often no harder.</p>
+<h2 id="how-to-spot-local-capable-devices-no-engineering-degree-required">How to spot local-capable devices (no engineering degree required)</h2>
+<p>On the product page or box, look for these words — they're the plain-English signals:</p>
+<ul><li><strong>"Works with Home Assistant"</strong> — Home Assistant is free, open-source software that runs on a small box in your closet and becomes your home's measuring stick and remote.</li><li><strong>Matter, or Thread</strong> — modern standards designed, in part, for local control across brands.</li><li><strong>Zigbee or Z-Wave</strong> — older radio standards that pair with a hub that lives in your house.</li><li><strong>"No cloud required" / "local API" / "on-device schedules."</strong></li><li><strong>HomeKit compatibility</strong> — Apple's stack keeps most control and history local to your home hub.</li></ul>
+<p>If a product page mentions none of these and only says "download our app," it's cloud-tethered: not forbidden, just not the local-first pick.</p>
+<h2 id="the-three-common-local-first-setups-ranked-by-effort">The three common local-first setups (ranked by effort)</h2>
+<h3 id="level-1-a-local-friendly-hub">Level 1: A local-friendly hub</h3>
+<p>Buy nothing extra beyond what you'd buy anyway; pick devices that pair with a hub (Zigbee/Z-Wave/Thread) rather than Wi-Fi gadgets. The hub sits in a closet, keeps schedules and rules inside your home, and serves an app that works on your network. HomeKit homes and hub-based starter kits both qualify. Effort: low — the "local" happens because of the shape of the gear, not because of your skills.</p>
+<h3 id="level-2-home-assistant-on-a-small-computer-the-community-favorite">Level 2: Home Assistant on a small computer (the community favorite)</h3>
+<p>Home Assistant is free, open-source home-control software. People run it on a Raspberry Pi-style single-board computer or a mini PC, or in a ready-made "Home Assistant Yellow/Green" style box. Its skill curve is real but gentle: start with plugs and lights, and let it grow at your pace. Its community documentation is famously patient with beginners. Effort: medium — one evening to start, then as many evenings as you enjoy.</p>
+<h3 id="level-3-the-tinkerers-shelf">Level 3: The tinkerer's shelf</h3>
+<p>ESPHome and DIY microcontroller gadgets, home-grown dashboards, scripts that tie everything together. Honestly, past Level 2 most people are having the fun for its own sake — and that's fine, this is a guide, not a rulebook.</p>
+<h2 id="a-few-genuinely-local-friendly-picks-named-because-theyre-famous-not-because-anyone-paid">A few genuinely local-friendly picks (named because they're famous, not because anyone paid)</h2>
+<ul><li><strong>Home Assistant</strong> — free, open source; the community standard for local hubs.</li><li><strong>Hubitat Elevation</strong> — a purpose-built local-control hub (Zigbee/Z-Wave).</li><li><strong>Apple HomeKit</strong>, via HomeKit-compatible devices or a hub — most control flows locally by design.</li><li><strong>Shelly</strong> brand plugs/relays — many models expose local control with "local API."</li><li><strong>Aqara / Zigbee sensors and plugs</strong> with a local hub (see again Level 1).</li><li><strong>Lutron Caséta</strong> — lighting with a well-liked local hub integration in Home Assistant.</li></ul>
+<p>The general shape to remember: <strong>hubs first (Level 1) covers most people. Level 2 is worth one nice weekend. Level 3 is optional joy.</strong></p>
+<h2 id="what-local-control-does-not-mean">What local control does <em>not</em> mean</h2>
+<p>It doesn't mean zero internet ever: apps get updates, firmware downloads, and voice-cloud devices still use the cloud. It means <strong>when the internet goes down, the important stuff — lights, schedules, locks, heating — keeps working</strong>, and your day-to-day logs mostly stay home.</p><nav class="pager"><span>← Previous: <a href="06-home-cameras.html">Home Cameras</a></span><span>Next: <a href="08-guest-networks.html">Guest Networks, Plain English</a> →</span></nav>
+</article>
+</main>
+<footer class="site"><div class="wrap">
+<p>© 2026 Asdale Dynamics, LLC · MIT License · A calm, privacy-first beginner manual for smart speakers, plugs, thermostats, and cameras.</p>
+</div></footer>
+</body>
+</html>

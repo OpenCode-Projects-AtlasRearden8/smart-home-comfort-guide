@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A guest network is a second lane of the same road. Your family&#x27;s phones, speakers, and cameras ride one lane; guests&#x27; phones ride the other. Same house, same ad">
+<title>Guest Networks, Plain English — Smart Home Comfort Guide</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="site-title" href="index.html">Smart Home <span>Comfort Guide</span></a>
+<span class="site-tagline">privacy-first, in plain English</span>
+</div></header>
+<main class="wrap">
+<article>
+<nav class="toc"><strong>On this page</strong><ul><li><a href="#why-bother-plainly">Why bother, plainly</a></li><li><a href="#what-it-protects-against-and-what-it-doesnt">What it protects against (and what it doesn&#x27;t)</a></li><li><a href="#the-10-minute-walkthrough-most-routers">The 10-minute walkthrough (most routers)</a></li><li><a href="#the-two-settings-that-matter-most">The two settings that matter most</a></li><li><a href="#where-do-smart-devices-live-then">Where do smart devices live, then?</a></li><li><a href="#when-guests-ask-for-the-password">When guests ask for the password</a></li><li><a href="#calm-summary">Calm summary</a></li></ul></nav><p>A guest network is a second lane of the same road. Your family's phones, speakers, and cameras ride one lane; guests' phones ride the other. Same house, same address (the same router), but the lanes don't mix. That's the whole idea. This chapter gets you from "sounds nice" to "done in ten minutes."</p>
+<h2 id="why-bother-plainly">Why bother, plainly</h2>
+<p>Three reasons in growing order of importance:</p>
+<ol><li><strong>Politeness, automated.</strong> Guests get Wi-Fi without you reading out a forty-character password over zooming crickets.</li><li><strong>Safety-in-depth.</strong> A visitor's laptop with an old, unpatched flaw can't sniff around your printer's settings or poke at your thermostat from the guest lane.</li><li><strong>Privacy furniture.</strong> Your smart devices live on the family lane. Things that don't need to <em>talk to</em> your devices simply can't. Neighbors still borrow sugar; they don't need to borrow your camera feed.</li></ol>
+<h2 id="what-it-protects-against-and-what-it-doesnt">What it protects against (and what it doesn't)</h2>
+<p>It protects the <em>shape</em> of your network: family and guest clients can't address each other directly. It does <strong>not</strong> fix bad password hygiene, an outdated router, or a camera you plugged into the TV-lane by accident. It's one good lock, not the whole door.</p>
+<h2 id="the-10-minute-walkthrough-most-routers">The 10-minute walkthrough (most routers)</h2>
+<p>Exact wording varies by router brand, but the shape is always the same. Look in your router's web settings (often <code>192.168.0.1</code> or <code>192.168.1.1</code> in a browser) or its phone app, and find:</p>
+<ol><li><strong>Wireless → Guest network</strong> (or "Guest Wi-Fi," "Visitor access," "2.4G Guest.")</li><li>Turn it <strong>on</strong>.</li><li>Name it something friendly: <code>SureHills-Guest</code>. (Anything except your real family network's name.)</li><li>Give it a <strong>separate password</strong> — shorter than a novel is fine; guests type it on phone keyboards.</li><li>Find the toggle called <strong>"Allow guests to see each other"</strong> — make sure it's <strong>off</strong>.</li><li>Same style of toggle for <strong>"Allow access to local network / intranet"</strong> — <strong>off</strong>. This is the real lock; the rest is presentation.</li><li>Optional but nice: a <strong>speed cap</strong> ("limit bandwidth") so one guest's game patch doesn't slow your family speaker.</li><li>Save, then connect with a phone you brought as a guest and test: you <em>should</em> get internet and <em>should not</em> be able to reach your printer or camera.</li></ol>
+<h2 id="the-two-settings-that-matter-most">The two settings that matter most</h2>
+<p>If you remember only two words: <strong>isolation</strong> and <strong>no local access.</strong> Every guest-network feature is some version of "keep the guest lane from touching the family lane." Skip the fancy portal pages and bandwidth limits if they frustrate you; isolation is the part with teeth.</p>
+<h2 id="where-do-smart-devices-live-then">Where do smart devices live, then?</h2>
+<ul><li><strong>Family lane</strong>: speakers, plugs, thermostat, cameras, computers, phones — everything that is <em>your</em> stuff.</li><li><strong>Guest lane</strong>: visitors' phones, the babysitter's tablet, the in-laws' laptop, your kid's school friends. Possibly also the doorbell camera if it's cloud-heavy and you want it extra-segregated — with the caveat that if you use a local-control hub, it must be on the family lane to be reachable.</li></ul>
+<p>One practical note for IoT-tinkerers: some routers let you make a third lane (an "IoT network") for gadgets alone. That's genuinely tidy, not required — the guest lane is the 90% win.</p>
+<h2 id="when-guests-ask-for-the-password">When guests ask for the password</h2>
+<p>Have a story-free answer. A card by the front door (see <a href="10-family-presets.html">Family Presets</a>) with the guest Wi-Fi name and password, laminated, is both charming and practical. If you update the password once a quarter, make re-printing the card part of that ritual.</p>
+<h2 id="calm-summary">Calm summary</h2>
+<ul><li>Two lanes, one road.</li><li>The toggle to hunt for is <strong>"no access to local network."</strong></li><li>Everything that's <em>your stuff</em> rides the family lane; guests ride the other.</li><li>Ten minutes, one router settings visit, engraved forever.</li></ul><nav class="pager"><span>← Previous: <a href="07-local-control-first.html">Local Control First</a></span><span>Next: <a href="09-muting-and-factory-reset.html">Muting and Factory Reset</a> →</span></nav>
+</article>
+</main>
+<footer class="site"><div class="wrap">
+<p>© 2026 Asdale Dynamics, LLC · MIT License · A calm, privacy-first beginner manual for smart speakers, plugs, thermostats, and cameras.</p>
+</div></footer>
+</body>
+</html>
